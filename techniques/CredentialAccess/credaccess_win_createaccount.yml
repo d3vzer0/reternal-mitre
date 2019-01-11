@@ -1,0 +1,22 @@
+# Reternal remapping of Meta technique: https://github.com/uber-common/metta
+
+name: Windows commandline new user creation.
+author: redcanary
+description: Windows commandline new user creation.
+reference: http://pwnwiki.io/#!index.md
+mitre_technique:
+  id: T1136
+  platform: Windows
+commands:
+- input: net user /add Jack Pwndiddy1
+  sleep: 1
+  type: exec_shell
+- input: net localgroup administrators jack /add
+  sleep: 1
+  type: exec_shell
+- input: net user newdomainuser thepassword \domain
+  sleep: 1
+  type: exec_shell
+- input: net user Jack /delete
+  sleep: 1
+  type: exec_shell

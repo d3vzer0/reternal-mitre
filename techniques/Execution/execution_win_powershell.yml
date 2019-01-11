@@ -1,0 +1,28 @@
+# Reternal remapping of Meta technique: https://github.com/uber-common/metta
+
+name: Powershell Execution Examples
+author: cg
+description: Powershell exection examples.
+reference: https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/
+mitre_technique:
+  id: T1086
+  platform: Windows
+commands:
+- input: powershell Get-NetIPConfiguration
+  sleep: 1
+  type: exec_shell
+- input: powershell -window hidden Get-NetIPConfiguration
+  sleep: 1
+  type: exec_shell
+- input: powershell -window hidden -encodedcommand RwBlAHQALQBOAGUAdABJAFAAQwBvAG4AZgBpAGcAdQByAGEAdABpAG8AbgA=
+  sleep: 1
+  type: exec_shell
+- input: powershell Write-Host \"Doing Evil stuff here\"
+  sleep: 1
+  type: exec_shell
+- input: powershell -window hidden -e VwByAGkAdABlAC0ASABvAHMAdAAgACIARABvAGkAbgBnACAARQB2AGkAbAAgAHMAdAB1AGYAZgAgAGgAZQByAGUAIgA=
+  sleep: 1
+  type: exec_shell
+- input: powershell -window hidden -enc VwByAGkAdABlAC0ASABvAHMAdAAgACIARABvAGkAbgBnACAARQB2AGkAbAAgAHMAdAB1AGYAZgAgAGgAZQByAGUAIgA=
+  sleep: 1
+  type: exec_shell
