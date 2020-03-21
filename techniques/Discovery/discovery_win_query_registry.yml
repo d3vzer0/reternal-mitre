@@ -10,7 +10,7 @@ mitre_technique:
 commands:
 - input: REG QUERY HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: REG QUERY HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce
   sleep: 1
-  type: exec_shell
+  module: exec_shell

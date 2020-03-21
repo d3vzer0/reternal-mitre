@@ -10,19 +10,13 @@ mitre_technique:
 commands:
 - input: powershell Get-NetIPConfiguration
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: powershell -window hidden Get-NetIPConfiguration
   sleep: 1
-  type: exec_shell
-- input: powershell -window hidden -encodedcommand RwBlAHQALQBOAGUAdABJAFAAQwBvAG4AZgBpAGcAdQByAGEAdABpAG8AbgA=
+  module: exec_shell
+- input: powershell -window hidden -encodedcommand {{ ps_encoded_command }}
   sleep: 1
-  type: exec_shell
-- input: powershell Write-Host \"Doing Evil stuff here\"
+  module: exec_shell
+- input: powershell Write-Host \"{{ ps_custom_message }}\"
   sleep: 1
-  type: exec_shell
-- input: powershell -window hidden -e VwByAGkAdABlAC0ASABvAHMAdAAgACIARABvAGkAbgBnACAARQB2AGkAbAAgAHMAdAB1AGYAZgAgAGgAZQByAGUAIgA=
-  sleep: 1
-  type: exec_shell
-- input: powershell -window hidden -enc VwByAGkAdABlAC0ASABvAHMAdAAgACIARABvAGkAbgBnACAARQB2AGkAbAAgAHMAdAB1AGYAZgAgAGgAZQByAGUAIgA=
-  sleep: 1
-  type: exec_shell
+  module: exec_shell

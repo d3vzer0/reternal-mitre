@@ -10,7 +10,7 @@ mitre_technique:
 commands:
 - input: wmic process list /format:list
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: tasklist /v
   sleep: 1
-  type: exec_shell
+  module: exec_shell

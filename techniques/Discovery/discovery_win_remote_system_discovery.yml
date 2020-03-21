@@ -10,10 +10,10 @@ mitre_technique:
 commands:
 - input: net view
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: net view /domain
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: arp -a
   sleep: 1
-  type: exec_shell
+  module: exec_shell

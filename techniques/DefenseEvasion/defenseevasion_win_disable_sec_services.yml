@@ -10,16 +10,16 @@ mitre_technique:
 commands:
 - input: net stop MpsSvc
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: net stop wscsvc
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: net stop WinDefend
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: net stop wuauserv
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: net stop carbonblack
   sleep: 1
-  type: exec_shell
+  module: exec_shell

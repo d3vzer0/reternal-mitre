@@ -10,4 +10,4 @@ mitre_technique:
 commands:
 - input: echo \"* * * * * /tmp/evil.sh\" > /tmp/persistevil && crontab /tmp/persistevil
   sleep: 1
-  type: exec_shell
+  module: exec_shell

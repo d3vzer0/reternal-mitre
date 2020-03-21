@@ -10,7 +10,7 @@ mitre_technique:
 commands:
 - input: whoami | clip
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: powershell.exe echo Get-Process | clip
   sleep: 1
-  type: exec_shell
+  module: exec_shell

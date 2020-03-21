@@ -10,7 +10,7 @@ mitre_technique:
 commands:
 - input: echo \"BUBBLEWRAP (also known as Backdoor.APT.FakeWinHTTPHelper)\"  > C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\upload
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: ren C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\upload audiodg.exe
   sleep: 1
-  type: exec_shell
+  module: exec_shell

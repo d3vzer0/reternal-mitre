@@ -10,10 +10,10 @@ mitre_technique:
 commands:
 - input: sudo launchctl unload /Library/LaunchDaemons/com.carbonblack.daemon.plist
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: sudo launchctl unload /Library/LaunchDaemons/at.obdev.littlesnitchd.plist
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: sudo launchctl unload /Library/LaunchDaemons/com.opendns.osx.RoamingClientConfigUpdater.plist
   sleep: 1
-  type: exec_shell
+  module: exec_shell

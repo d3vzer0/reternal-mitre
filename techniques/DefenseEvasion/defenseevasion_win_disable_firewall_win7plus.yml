@@ -10,16 +10,16 @@ mitre_technique:
 commands:
 - input: netsh advfirewall set  currentprofile state off
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: netsh advfirewall set domainprofile state off
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: netsh advfirewall set privateprofile state off
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: netsh advfirewall set publicprofile state off
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: netsh advfirewall set  allprofiles state off
   sleep: 1
-  type: exec_shell
+  module: exec_shell

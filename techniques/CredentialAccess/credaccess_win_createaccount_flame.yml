@@ -9,9 +9,9 @@ mitre_technique:
   id: T1136
   platform: Windows
 commands:
-- input: net user /add HelpAssistant Pwndiddy1
+- input: net user /add {{ add_user_name }} {{ add_user_pass }}
   sleep: 1
-  type: exec_shell
-- input: net user HelpAssistant /delete
+  module: exec_shell
+- input: net user {{ add_user_name }} /delete
   sleep: 1
-  type: exec_shell
+  module: exec_shell

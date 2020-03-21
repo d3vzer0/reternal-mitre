@@ -10,7 +10,7 @@ mitre_technique:
 commands:
 - input: sudo xattr -r -d com.apple.quarantine /path/to/MyApp.app
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: sudo spctl --master-disable
   sleep: 1
-  type: exec_shell
+  module: exec_shell

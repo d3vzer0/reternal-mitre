@@ -10,4 +10,4 @@ mitre_technique:
 commands:
 - input: wevtutil cl System
   sleep: 1
-  type: exec_shell
+  module: exec_shell

@@ -9,10 +9,10 @@ mitre_technique:
   id: T1136
   platform: Windows
 commands:
-- input: powershell.exe New-LocalUser -FullName 'Jack Frost' -Name 'Jackfro' -Password
-    'Pwndiddy1' -Description 'Pwnage account'
+- input: powershell.exe New-LocalUser -FullName '{{ add_user_full_name }}' -Name '{{ add_user_name }}' -Password
+    '{{ add_user_pass }}' -Description 'Pwnage account'
   sleep: 1
-  type: exec_shell
-- input: net user jackfro /delete
+  module: exec_shell
+- input: net user {{ add_user_name }} /delete
   sleep: 1
-  type: exec_shell
+  module: exec_shell

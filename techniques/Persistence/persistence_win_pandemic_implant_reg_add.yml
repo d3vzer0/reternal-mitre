@@ -10,4 +10,4 @@ mitre_technique:
 commands:
 - input: reg add HKLM\SYSTEM\CurrentControlSet\Services\Null /v Instance
   sleep: 1
-  type: exec_shell
+  module: exec_shell

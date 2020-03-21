@@ -10,14 +10,14 @@ mitre_technique:
 commands:
 - input: wmic useraccount get /ALL
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: wmic process get caption,executablepath,commandline
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: wmic qfe get description,installedOn /format:csv
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: powershell.exe get-wmiobject -class \"win32_share\" -namespace \"root\CIMV2\"
-    -computer \"targetname\"
+    -computer \"{{ target_name }}\"
   sleep: 1
-  type: exec_shell
+  module: exec_shell

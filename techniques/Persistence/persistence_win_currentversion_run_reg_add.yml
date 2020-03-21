@@ -9,9 +9,9 @@ mitre_technique:
   platform: Windows
 commands:
 - input: reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v JUSCHED /d
-    C:\windows\temp\evil.exe /f
+    {{ persistence_save_path }} /f
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: reg query HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v JUSCHED
   sleep: 1
-  type: exec_shell
+  module: exec_shell

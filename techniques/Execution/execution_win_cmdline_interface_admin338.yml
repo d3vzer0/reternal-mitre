@@ -10,16 +10,16 @@ mitre_technique:
 commands:
 - input: echo d76261ba3b624933a6ebb5dd73758db4 > C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\time.exe
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: echo d76261ba3b624933a6ebb5dd73758db4 > C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\WmiApCom
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: echo 79b68cdd0044edd4fbf8067b22878644 > C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\WmiApCom.bat
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: type C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\WmiApCom.bat
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: echo \"backdoor commands\" > C:\\Users\\AUTOMA~1\\AppData\\Local\\Temp\\computername_upload.bat
   sleep: 1
-  type: exec_shell
+  module: exec_shell

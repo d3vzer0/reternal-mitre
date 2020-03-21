@@ -10,7 +10,7 @@ mitre_technique:
 commands:
 - input: setspn.exe -t corp -q */*
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: vssadmin.exe list shadows
   sleep: 1
-  type: exec_shell
+  module: exec_shell

@@ -14,4 +14,4 @@ commands:
     & return  default answer \"\" with icon 1 with hidden answer with title \"Software
     Update\"'
   sleep: 1
-  type: exec_shell
+  module: exec_shell

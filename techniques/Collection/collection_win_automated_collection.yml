@@ -10,8 +10,8 @@ mitre_technique:
 commands:
 - input: dir 'c:' /b /s .docx | findstr /e .docx
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: powershell Get-ChildItem -Recurse -Include *.doc | % {Copy-Item $_.FullName
     -destination c:\temp}
   sleep: 1
-  type: exec_shell
+  module: exec_shell

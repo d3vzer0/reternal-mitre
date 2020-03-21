@@ -10,13 +10,13 @@ mitre_technique:
 commands:
 - input: gpresult -r
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: gpresult -z
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: reg query HKLM\\SYSTEM\\CurrentControlSet\\Services\\Disk\\Enum
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input: systeminfo
   sleep: 1
-  type: exec_shell
+  module: exec_shell

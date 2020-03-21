@@ -10,4 +10,4 @@ mitre_technique:
 commands:
 - input: defaults write com.apple.loginwindow LoginHook /usr/bin/hook.sh
   sleep: 1
-  type: exec_shell
+  module: exec_shell

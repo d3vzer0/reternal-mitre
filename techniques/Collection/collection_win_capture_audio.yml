@@ -10,4 +10,4 @@ mitre_technique:
 commands:
 - input: SoundRecorder /FILE test.wma /DURATION 0000:00:30
   sleep: 1
-  type: exec_shell
+  module: exec_shell
