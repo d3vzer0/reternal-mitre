@@ -1,0 +1,12 @@
+name: '[T1054] Indicator Blocking - Unknown Sysmon Config loaded'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1054
+queries:
+- '`indextime` `sysmon` event_id=16 NOT [|inputlookup trusted-sysmon-configurations.csv
+  | fields hash_sha1]| eval indextime = _indextime | convert ctime(indextime) | table
+  _time indextime host_fqdn sysmon_configuration hash_sha1 | rename hash_sha1 as "Unknown
+  HASH"'

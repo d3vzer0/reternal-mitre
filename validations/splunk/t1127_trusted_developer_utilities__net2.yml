@@ -1,0 +1,16 @@
+name: '[T1127] Trusted Developer Utilities - net2'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1127
+queries:
+- '`indextime` `sysmon` event_id=11 target_file_name="*\\AppData\\Local\\Microsoft\\CLR_v2.0*\\UsageLogs\\*"\
+
+  | eval mitre_technique_id="T1127" \
+
+  | `file_create_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn process_path file_path process_guid process_id'

@@ -1,0 +1,13 @@
+name: '[T1089] Disabling Security Tools - Sysmon service state change'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1089
+queries:
+- '| multisearch [search `indextime` `sysmon` event_id=4 State!=Started | fields _time
+  host_fqdn service_state] [search `indextime` `windows-security` event_id=7036 Message="*Sysmon*"
+  | rename HostName as host_fqdn Message as service_state | fields host_fqdn service_state]
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  host_fqdn service_state'

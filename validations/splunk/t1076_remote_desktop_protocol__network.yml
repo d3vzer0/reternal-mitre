@@ -1,0 +1,18 @@
+name: '[T1076] Remote Desktop Protocol - Network'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1076
+queries:
+- '`indextime` `sysmon` event_id=3 (process_path="*\\tscon.exe" OR process_name="mstsc.exe")
+  OR dst_port=3389 initiated=true\
+
+  | eval mitre_technique_id="T1076" \
+
+  | `network_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn user_name process_path process_id process_parent_id
+  process_command_line process_guid src_ip dst_ip dst_port src_host_name dst_host_name'

@@ -1,0 +1,19 @@
+name: '[T1043] Commonly Used Port'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1043
+queries:
+- '`indextime` `sysmon` event_id=3 (dst_port="22" OR dst_port="23" OR dst_port="25"
+  OR dst_port="135" OR dst_port="3389" OR dst_port="5800" OR dst_port="5900" OR dst_port="8080")
+  initiated=true\
+
+  | eval mitre_technique_id="T1043" \
+
+  | `network_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn user_name process_path process_id process_guid src_ip
+  dst_ip dst_port src_host_name dst_host_name initiated transport'

@@ -1,0 +1,18 @@
+name: '[T1047] WMI command execution'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1047
+queries:
+- '`indextime` `sysmon` event_id=20 wmi_consumer_type="Command Line" \
+
+  | eval mitre_technique_id = "T1047" \
+
+  | eval hash_sha256= lower(hash_sha256)\
+
+  | `wmi_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn user_name wmi_consumer_name wmi_consumer_destination'

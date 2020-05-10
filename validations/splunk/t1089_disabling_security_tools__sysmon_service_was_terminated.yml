@@ -1,0 +1,15 @@
+name: '[T1089] Disabling Security Tools - Sysmon service was terminated'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1089
+queries:
+- '`indextime` `windows-security` EventCode=7034 Message="*Sysmon*"\
+
+  | eval mitre_technique_id="T1089" \
+
+  | rename ComputerName as Computer Message as State \
+
+  | eval indextime = _indextime | convert ctime(indextime) | table Computer State'

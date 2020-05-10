@@ -1,0 +1,17 @@
+name: '[T1047] Windows Management Instrumentation - Instances of an Active Script
+  Event Consumer - FileAccess'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1047
+queries:
+- '`indextime` `sysmon` event_id=11 process_path="C:\\WINDOWS\\system32\\wbem\\scrcons.exe"\
+
+  | eval mitre_technique_id="T1047" \
+
+  | `file_create_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn process_path file_path process_guid process_id'

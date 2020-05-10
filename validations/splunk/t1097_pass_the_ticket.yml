@@ -1,0 +1,10 @@
+name: '[T1097] Pass the ticket'
+author: olafhartong
+description: Hunting query based on sysmon or windows events for Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+integration: Splunk
+mitre_technique:
+  id: T1097
+queries:
+- '`indextime` index=windows (EventCode=4771 OR EventCode=4768 OR EventCode=4769)
+  Failure_Code=0x1F'
