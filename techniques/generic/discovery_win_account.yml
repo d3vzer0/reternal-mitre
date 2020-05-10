@@ -13,57 +13,57 @@ commands:
 - input:
     command: net group \"Domain Admins\" /domain
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net user
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net user /domain
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net localgroup administrators
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net share
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net use
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net accounts
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: net config workstation
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: C:\\tools\win32bins\\activedirectory\\dsquery server
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: C:\\tools\win32bins\\activedirectory\\dsquery user -name smith* | C:\\tools\win32bins\\activedirectory\\dsget
       user -dn -desc
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: wmic useraccount list /format:list
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: wmic ntdomain
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: wmic group list /format:list
   sleep: 1
-  type: exec_shell
+  module: exec_shell
 - input:
     command: wmic sysaccount list /format:list
   sleep: 1
-  type: exec_shell
+  module: exec_shell
