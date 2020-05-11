@@ -1,0 +1,1185 @@
+[
+    {
+        "external_id": "T1001",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1002",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1003",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1004",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1005",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1006",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1007",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1008",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1009",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1010",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1011",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1012",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1013",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1014",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1015",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1016",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1017",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1018",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1019",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1020",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1021",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1022",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1023",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1024",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1025",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1026",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1027",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-FIL",
+        "l2_usecase_name": "File corruption, encryption and unauthorized access"
+    },
+    {
+        "external_id": "T1028",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1029",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1030",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1031",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1032",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1033",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1034",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1035",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1036",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1037",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1038",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1039",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1040",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1041",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1042",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1043",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1044",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1045",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1046",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1047",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1048",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1049",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1050",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1051",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1052",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EXF",
+        "l2_usecase_name": "Data exfiltration"
+    },
+    {
+        "external_id": "T1053",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1054",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1055",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1056",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1057",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1058",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1059",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1060",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1061",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1062",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1063",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1064",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1065",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1066",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1067",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1068",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-VUL",
+        "l2_usecase_name": "Vulnerable system or service"
+    },
+    {
+        "external_id": "T1069",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1070",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1071",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1072",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1073",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1074",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1075",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1076",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1077",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1078",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-ACC",
+        "l2_usecase_name": "Account breached"
+    },
+    {
+        "external_id": "T1079",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1080",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1081",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1082",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1083",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1084",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1085",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1086",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1087",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1088",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1089",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-POL",
+        "l2_usecase_name": "Unauthorized modification of technical policy"
+    },
+    {
+        "external_id": "T1090",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1091",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1092",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1093",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1094",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1095",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1096",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1097",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1098",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-ACC",
+        "l2_usecase_name": "Account breached"
+    },
+    {
+        "external_id": "T1099",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1100",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1101",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1102",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1103",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1104",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1105",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-LAT",
+        "l2_usecase_name": "Lateral movement"
+    },
+    {
+        "external_id": "T1106",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1107",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-FIL",
+        "l2_usecase_name": "File corruption, encryption and unauthorized access"
+    },
+    {
+        "external_id": "T1108",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1109",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1110",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-BRU",
+        "l2_usecase_name": "Internal Brute force"
+    },
+    {
+        "external_id": "T1111",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1112",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-POL",
+        "l2_usecase_name": "Unauthorized modification of technical policy"
+    },
+    {
+        "external_id": "T1113",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1114",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1115",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1116",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1117",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1118",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1119",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1120",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1121",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1122",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1123",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1124",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1125",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-COL",
+        "l2_usecase_name": "Data collection"
+    },
+    {
+        "external_id": "T1126",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1127",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1128",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1129",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1130",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-NET",
+        "l2_usecase_name": "Network-based attack"
+    },
+    {
+        "external_id": "T1131",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1132",
+        "l1_usecase_id": "CC",
+        "l1_usecase_name": "Command & Control",
+        "l2_usecase_id": "CC-SNC",
+        "l2_usecase_name": "Suspicious outbound network communication"
+    },
+    {
+        "external_id": "T1133",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1134",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1135",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-REC",
+        "l2_usecase_name": "Internal reconnaissance"
+    },
+    {
+        "external_id": "T1136",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-ACC",
+        "l2_usecase_name": "Account breached"
+    },
+    {
+        "external_id": "T1137",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1138",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1139",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1140",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-FIL",
+        "l2_usecase_name": "File corruption, encryption and unauthorized access"
+    },
+    {
+        "external_id": "T1141",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1142",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1143",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1144",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1145",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1146",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1147",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1148",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1149",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1150",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1151",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1152",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1153",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1154",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-PRC",
+        "l2_usecase_name": "Unauthorized process launched"
+    },
+    {
+        "external_id": "T1155",
+        "l1_usecase_id": "EX",
+        "l1_usecase_name": "Exploitation",
+        "l2_usecase_id": "EX-AWE",
+        "l2_usecase_name": "Application whitelist evasion attempt"
+    },
+    {
+        "external_id": "T1156",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1157",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1158",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-EVA",
+        "l2_usecase_name": "Detection evasion techniques"
+    },
+    {
+        "external_id": "T1159",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1160",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1161",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1162",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1163",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1164",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1165",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1166",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PRI",
+        "l2_usecase_name": "Privilege escalation"
+    },
+    {
+        "external_id": "T1167",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-CRE",
+        "l2_usecase_name": "Credential theft"
+    },
+    {
+        "external_id": "T1168",
+        "l1_usecase_id": "AO",
+        "l1_usecase_name": "Actions on Objectives",
+        "l2_usecase_id": "AO-PER",
+        "l2_usecase_name": "Installation of persistence mechanism"
+    },
+    {
+        "external_id": "T1169",
+        "l1_usecase_id": "PV",
+        "l1_usecase_name": "Policy Violations",
+        "l2_usecase_id": "PV-ACC",
+        "l2_usecase_name": "Unauthorized use of high-privileged account"
+    }
+]

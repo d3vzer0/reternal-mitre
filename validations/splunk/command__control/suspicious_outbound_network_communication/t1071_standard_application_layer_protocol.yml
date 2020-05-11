@@ -1,0 +1,16 @@
+name: '[T1071] Standard Application Layer Protocol'
+integration: Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+description: Hunting query based on sysmon or windows events for Splunk
+author: olafhartong
+mitre_technique:
+  id: T1071
+  datasources:
+  - DNS Records
+coverage:
+  sources:
+    and:
+    - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+search: '`indextime` `sysmon` event_id=22 [| inputlookup doh.csv] | eval mitre_technique_id="T1071"
+  | eval event_description="DNS Query"  | `dns_whitelist` | table _time indextime
+  event_description host_fqdn process_path query_name query_status query_results process_guid'

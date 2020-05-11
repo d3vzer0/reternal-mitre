@@ -1,0 +1,24 @@
+name: '[T1002] Data Compressed - Files'
+integration: Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+description: Hunting query based on sysmon or windows events for Splunk
+author: olafhartong
+mitre_technique:
+  id: T1002
+  datasources:
+  - File monitoring
+coverage:
+  sources:
+    and:
+    - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+search: '`indextime` `sysmon` event_id=11 (file_name="*.zip" OR file_name="*.rar"
+  OR file_name="*.arj" OR file_name="*.gz" OR file_name="*.tar" OR file_name="*.tgz"
+  OR file_name="*.7z" OR file_name="*.zip" OR file_name="*.tar.gz" OR file_name="*.bin")
+  \
+
+  | eval mitre_technique_id="T1002" \
+
+  | `file_create_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn process_path process_guid process_id file_name file_path'

@@ -1,0 +1,20 @@
+name: '[T1073] DLL Side-Loading - PowerShell'
+integration: Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+description: Hunting query based on sysmon or windows events for Splunk
+author: olafhartong
+mitre_technique:
+  id: T1073
+  datasources:
+  - DLL monitoring
+coverage:
+  sources:
+    and:
+    - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+search: "`indextime` `sysmon` event_id=7 (driver_loaded=\"*\\\\System.Management.Automation.ni.dll\"\
+  \ OR driver_loaded=\"*\\\\System.Management.Automation.dll\" OR driver_loaded=\"\
+  *\\\\PowerShdll.dll\") (process_name!=\"powershell.exe\" OR process_name!=\"powershellise.exe\"\
+  )\\\n    | eval mitre_technique_id=\"T1073\" \\\n    | `image_load_whitelist`\\\n\
+  \    | eval indextime = _indextime | convert ctime(indextime) | table _time indextime\
+  \ event_description host_fqdn process_path driver_loaded driver_is_signed driver_signature\
+  \ driver_signature_status process_id process_guid"

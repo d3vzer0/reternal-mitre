@@ -1,0 +1,26 @@
+name: '[T1086] PowerShell Downloads - WinProcess'
+integration: Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+description: Hunting query based on sysmon or windows events for Splunk
+author: olafhartong
+mitre_technique:
+  id: T1086
+  datasources:
+  - Process command-line parameters
+coverage:
+  sources:
+    and:
+    - wineventlog:security
+search: '`indextime` `windows-security` event_id=4688 (".Download" OR "Net.WebClient")
+  \
+
+  | eval mitre_technique_id="T1086" \
+
+  | eval hash_sha256= lower(hash_sha256)\
+
+  | `process_create_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime,
+  host, host_fqdnName, Account_Name, New_Process_Name, Process_Command_Line| rename
+  Process_Command_Line as process_command_line, New_Process_Name as process_path,
+  Account_Name as user_name'

@@ -1,0 +1,25 @@
+name: '[T1196] Control Panel Items - Registry'
+integration: Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+description: Hunting query based on sysmon or windows events for Splunk
+author: olafhartong
+mitre_technique:
+  id: T1196
+  datasources:
+  - Windows Registry
+coverage:
+  sources:
+    and:
+    - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+search: '`indextime` `sysmon` (event_id=12 OR event_id=13 OR event_id=14) (registry_key_path="*\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ControlPanel\\NameSpace*"
+  OR registry_key_path="*\\Software\\Microsoft\\Windows\\CurrentVersion\\Controls
+  Folder\\*\\Shellex\\PropertySheetHandlers\\*" OR registry_key_path="*\\Software\\Microsoft\\Windows\\CurrentVersion\\Control
+  Panel\\*") \
+
+  | eval mitre_technique_id="T1196" \
+
+  | `registry_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description event_type host_fqdn process_path  process_id process_guid registry_key_path
+  registry_key_details'

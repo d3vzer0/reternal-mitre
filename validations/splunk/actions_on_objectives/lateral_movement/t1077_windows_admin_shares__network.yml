@@ -1,0 +1,24 @@
+name: '[T1077] Windows Admin Shares - Network'
+integration: Splunk
+reference: https://github.com/olafhartong/ThreatHunting
+description: Hunting query based on sysmon or windows events for Splunk
+author: olafhartong
+mitre_technique:
+  id: T1077
+  datasources:
+  - Process use of network
+coverage:
+  sources:
+    and:
+    - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+search: '`indextime` `sysmon` event_id=3 (process_name="net.exe") AND (process_command_line="*net*
+  use*$" OR process_command_line="*net* session*$" OR process_command_line="*net*
+  file*$")\
+
+  | eval mitre_technique_id="T1077" \
+
+  | `network_whitelist`\
+
+  | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
+  event_description host_fqdn user_name process_path process_id process_parent_id
+  process_command_line process_guid src_ip dst_ip dst_port src_host_name dst_host_name'
