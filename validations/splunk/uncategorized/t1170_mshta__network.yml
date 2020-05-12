@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Process use of network
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=3 (process_parent_path="*\\mshta.exe" OR process_path="*\\mshta.exe")

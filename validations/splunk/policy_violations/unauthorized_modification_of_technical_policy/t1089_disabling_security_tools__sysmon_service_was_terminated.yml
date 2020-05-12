@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Services
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - wineventlog:system
 search: '`indextime` `windows-security` EventCode=7034 Message="*Sysmon*"\

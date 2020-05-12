@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Authentication logs
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - wineventlog:security
 search: '`indextime` index=windows (EventCode=4771 OR EventCode=4768 OR EventCode=4769)

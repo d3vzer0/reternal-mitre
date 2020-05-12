@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Sensor health and status
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=16 NOT [|inputlookup trusted-sysmon-configurations.csv

@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Process command-line parameters
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - wineventlog:security
 search: '`indextime` `windows-security` event_id=4688 (".Download" OR "Net.WebClient")

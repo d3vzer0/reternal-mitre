@@ -9,7 +9,9 @@ mitre_technique:
   - Process command-line parameters
   - Process monitoring
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=1 process_parent_name="winlogon.exe" (process_name="sethc.exe"

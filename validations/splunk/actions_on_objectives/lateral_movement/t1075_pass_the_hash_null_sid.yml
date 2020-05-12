@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Authentication logs
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - wineventlog:security
 search: '`windows-security` event_id=4624 AND ((Security_ID="NULL SID" OR Security_ID="S-1-0-0")

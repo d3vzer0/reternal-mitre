@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - DNS Records
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=22 [| inputlookup doh.csv] | eval mitre_technique_id="T1071"

@@ -8,9 +8,10 @@ mitre_technique:
   datasources:
   - Sensor health and status
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
-    - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
     - wineventlog:security
 search: '| multisearch [search `indextime` `sysmon` event_id=4 State!=Started | fields
   _time host_fqdn service_state] [search `indextime` `windows-security` event_id=7036

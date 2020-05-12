@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Named Pipes
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=17 (pipe_name="*isapi_http*" OR pipe_name="*isapi_dg*"

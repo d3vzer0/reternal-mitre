@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Process use of network
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=3 (dest_port=389 OR dest_port=636 OR dest_port=445

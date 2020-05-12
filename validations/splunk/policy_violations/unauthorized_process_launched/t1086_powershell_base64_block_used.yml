@@ -9,7 +9,9 @@ mitre_technique:
   - Process command-line parameters
   - Process monitoring
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     or:
     - wineventlog:security
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational

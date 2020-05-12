@@ -8,7 +8,9 @@ mitre_technique:
   datasources:
   - Windows Registry
 coverage:
-  sources:
+  app:
+    and: ThreatHunting
+  sourcetype:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` (event_id=12 OR event_id=13 OR event_id=14) (registry_key_path="*\\mscfile\\shell\\open\\command\\*"
