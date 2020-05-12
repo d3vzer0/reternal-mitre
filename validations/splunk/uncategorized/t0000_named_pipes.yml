@@ -19,14 +19,9 @@ search: '`indextime` `sysmon` event_id=17 (pipe_name="*isapi_http*" OR pipe_name
   OR pipe_name="*NamePipe_MoreWindows*" OR pipe_name="*pcheap_reuse*" OR pipe_name="*PSEXESVC*"
   OR pipe_name="*PowerShellISEPipeName_*" OR pipe_name="*csexec*" OR pipe_name="*paexec*"
   OR pipe_name="*remcom*")  \
-
   | eval mitre_technique_id="T1077" \
-
   | `pipe_whitelist` \
-
   | eval indextime = _indextime \
-
   | convert ctime(indextime) \
-
   | table _time indextime event_description host_fqdn pipe_name process_path process_guid
   process_id'

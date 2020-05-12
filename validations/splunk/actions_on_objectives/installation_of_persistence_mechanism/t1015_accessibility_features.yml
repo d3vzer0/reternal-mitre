@@ -18,13 +18,9 @@ search: '`indextime` `sysmon` event_id=1 process_parent_name="winlogon.exe" (pro
   OR process_name="utilman.exe" OR process_name="osk.exe" OR process_name="magnify.exe"
   OR process_name="displayswitch.exe" OR process_name="narrator.exe" OR process_name="atbroker.exe")
   \
-
   | eval mitre_technique_id="T1015" \
-
   | eval hash_sha256= lower(hash_sha256)\
-
   | `process_create_whitelist`\
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description hash_sha256 host_fqdn user_name original_file_name process_path
   process_guid process_parent_path process_id process_parent_id process_command_line

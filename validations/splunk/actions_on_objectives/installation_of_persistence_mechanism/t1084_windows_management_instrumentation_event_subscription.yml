@@ -14,10 +14,7 @@ coverage:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=21 \
-
   | eval mitre_technique_id="T1084" \
-
   | `wmi_whitelist` \
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   host_fqdn user_name wmi_consumer_name wmi_consumer_destination'

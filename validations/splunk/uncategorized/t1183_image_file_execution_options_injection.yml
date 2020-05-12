@@ -16,11 +16,8 @@ coverage:
 search: '`indextime` `sysmon` (event_id=12 OR event_id=13 OR event_id=14) (registry_key_path="*\\Software\\Microsoft\\Windows
   NT\\CurrentVersion\\Image File Execution Options\\*" OR registry_key_path="*\\Wow6432Node\\Microsoft\\Windows
   NT\\CurrentVersion\\Image File Execution Options\\*")\
-
   | eval mitre_technique_id="T1183" \
-
   | `registry_whitelist`\
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description event_type host_fqdn process_path  process_id process_guid registry_key_path
   registry_key_details'

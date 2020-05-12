@@ -18,11 +18,8 @@ coverage:
 search: '`indextime` ((`sysmon` event_id=1) OR (`windows-security` event_id=4688))
   (process_name="net.exe" OR process_name="ping.exe") AND (process_command_line="*net*
   view*" OR process_command_line="*ping *")\
-
   | eval mitre_technique_id="T1018" \
-
   | `process_create_whitelist`\
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description hash_sha256 host_fqdn user_name original_file_name process_path
   process_guid process_parent_path process_id process_parent_id process_command_line

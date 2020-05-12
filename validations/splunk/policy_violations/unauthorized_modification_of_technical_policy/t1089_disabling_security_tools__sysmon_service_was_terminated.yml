@@ -14,9 +14,6 @@ coverage:
     and:
     - wineventlog:system
 search: '`indextime` `windows-security` EventCode=7034 Message="*Sysmon*"\
-
   | eval mitre_technique_id="T1089" \
-
   | rename ComputerName as Computer Message as State \
-
   | eval indextime = _indextime | convert ctime(indextime) | table Computer State'

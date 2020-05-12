@@ -20,13 +20,9 @@ search: '`indextime` ((`sysmon` event_id=1) OR (`windows-security` event_id=4688
   /All /Q*" OR process_command_line="*wmic*shadowcopy delete*" OR process_command_line="*wbdadmin*
   delete catalog -q*" OR process_command_line="*bcdedit*bootstatuspolicy ignoreallfailures*"
   OR process_command_line="*bcdedit*recoveryenabled no*")\
-
   | eval mitre_technique_id="T1107" \
-
   | eval hash_sha256= lower(hash_sha256)\
-
   | `process_create_whitelist`\
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description hash_sha256 host_fqdn user_name original_file_name process_path
   process_guid process_parent_path process_id process_parent_id process_command_line

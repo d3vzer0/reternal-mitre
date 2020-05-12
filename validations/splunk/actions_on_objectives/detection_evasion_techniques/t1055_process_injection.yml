@@ -14,7 +14,6 @@ coverage:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=8 (StartFunction="*LoadLibrary*") \
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description host_fqdn process_name target_process_path target_process_address
   thread_new_id process_guid process_parent_guid'

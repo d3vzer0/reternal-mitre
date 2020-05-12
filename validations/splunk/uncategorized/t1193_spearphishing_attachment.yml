@@ -19,10 +19,7 @@ search: '`indextime` `sysmon` event_id=11 (file_name="*.docm" OR file_name="*.xl
   OR file_name="*.jspx" OR file_name="*.cmd" OR file_name="*.php" OR file_name="*.pyw"
   OR file_name="*.xla" OR file_name="*.application" OR file_name="*.potm" OR file_name="*.csproj"
   OR file_name="*.aspx" OR file_name="*.exe") \
-
   | eval mitre_technique_id="T1193" \
-
   | `file_create_whitelist`\
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description host_fqdn process_path process_guid process_id file_name file_path'

@@ -14,14 +14,9 @@ coverage:
     and:
     - XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 search: '`indextime` `sysmon` event_id=17 pipe_name="*msagent_*" \
-
   | eval mitre_technique_id="T0000" \
-
   | `pipe_whitelist` \
-
   | eval indextime = _indextime \
-
   | convert ctime(indextime) \
-
   | table _time indextime event_description host_fqdn pipe_name process_path process_guid
   process_id'

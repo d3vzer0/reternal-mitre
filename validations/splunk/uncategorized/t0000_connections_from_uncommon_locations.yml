@@ -16,11 +16,8 @@ coverage:
 search: '`indextime` `sysmon` event_id=3 (process_path="C:\\user_names\\*" OR process_path="C:\\ProgramData\\*"
   OR process_path="C:\\Windows\\Temp\\*" OR process_path="C:\\Temp\\*") initiated=true
   \
-
   | eval mitre_technique_id="T0000" \
-
   | `network_whitelist`\
-
   | eval indextime = _indextime | convert ctime(indextime) | table _time indextime
   event_description host_fqdn user_name process_path process_id process_guid src_ip
   dst_ip dst_port src_host_name dst_host_name initiated transport'
