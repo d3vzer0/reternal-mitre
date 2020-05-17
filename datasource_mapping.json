@@ -1,0 +1,741 @@
+[
+    {
+        "datasources":[
+            "AWS CloudTrail logs"
+        ],
+        "vendor": "AWS", 
+        "name": "CloudTrail", 
+        "platforms": [
+            "AWS"
+        ],
+        "sourcetype": "^aws:cloudtrail$"
+    },
+    {
+        "datasources": [
+            "File monitoring"
+        ], 
+        "vendor": "AWS S3 access", 
+        "name": "S3", 
+        "platforms": [
+            "AWS"
+        ],
+        "sourcetype": "^aws.*s3.*access$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "AWS", 
+        "name": "AWS VPC Flow Logs", 
+        "platforms": [
+            "AWS"
+        ],
+        "sourcetype": "^aws.*vpcflow$"
+    },
+    {
+        "datasources": [
+            "Asset management"
+        ], 
+        "vendor": "AWS", 
+        "platforms": [
+            "AWS"
+        ],
+        "name": "CloudWatch", 
+        "sourcetype": "^aws:cloudwatch$"
+    }, 
+    {
+        "datasources": [
+            "Web proxy"
+        ], 
+        "vendor": "Blue Coat", 
+        "platforms": [
+
+        ],
+        "name": "BlueCoat Proxy AV", 
+        "sourcetype": "^(bluecoat:proxysg:access.*|bcoat_proxy)$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ],
+        "vendor": "Bro", 
+        "name": "Bro connections", 
+        "sourcetype": "^bro_conn$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ],
+        "vendor": "Bro",
+        "platforms": [
+
+        ], 
+        "name": "Bro DHCP", 
+        "sourcetype": "^bro_dhcp$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ],
+        "vendor": "Bro", 
+        "platforms": [
+
+        ],
+        "name": "DNS", 
+        "sourcetype": "^bro_dns$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ],
+        "vendor": "Bro", 
+        "platforms": [
+
+        ],
+        "name": "Bro FTP", 
+        "sourcetype": "^bro_ftp$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ],
+        "vendor": "Bro", 
+        "platforms": [
+
+        ],
+        "name": "Bro HTTP", 
+        "sourcetype": "^bro_http$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ], 
+        "vendor": "Bro", 
+        "platforms": [
+
+        ],
+        "name": "Bro SMTP", 
+        "sourcetype": "^bro_smtp$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ], 
+        "vendor": "Bro", 
+        "platforms": [
+
+        ],
+        "name": "Bro SSH", 
+        "sourcetype": "^bro_ssh$"
+    }, 
+    {
+        "datasources": [
+            "Network protocol analysis"
+        ], 
+        "vendor": "Bro", 
+        "platforms": [
+
+        ],
+        "name": "Bro SSL", 
+        "sourcetype": "^bro_ssl$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Check Point", 
+        "platforms": [
+
+        ],
+        "name": "Checkpoint Firewall", 
+        "sourcetype": "^opsec:firewall $"
+    }, 
+    {
+        "datasources": [
+            "Data loss prevention"
+        ], 
+        "vendor": "Check Point", 
+        "name": "Checkpoint DLP", 
+        "platforms": [
+            "Windows"
+        ],
+        "sourcetype": "^opsec:dlp$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Check Point",
+        "platforms": [
+
+        ],
+        "name": "Checkpoint Anti-Virus", 
+        "sourcetype": "^(opsec:anti_malware|opsec:anti_virus)$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Check Point",
+        "platforms": [
+
+        ],
+        "name": "Checkpoint Anti-Bot", 
+        "sourcetype": "^opsec:anti_bot$"
+    },
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Check Point",
+        "platforms": [
+
+        ],
+        "name": "Checkpoint IDS", 
+        "sourcetype": "^opsec:smartdefense$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Check Point",
+        "platforms": [
+
+        ],
+        "name": "VPN", 
+        "sourcetype": "^opsec:vpn$"
+    }, 
+    {
+        "datasources": [
+            "Email gateway"
+        ], 
+        "vendor": "Cisco", 
+        "platforms": [
+
+        ],
+        "name": "Cisco Email (ESA)", 
+        "sourcetype": "^(cisco:esa:.*|ironport)$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Cisco", 
+        "name": "ASA Firewall", 
+        "sourcetype": "^cisco:asa$"
+    }, 
+    {
+        "datasources": [
+            "DNS records",
+            "Network device logs"
+        ], 
+        "vendor": "Cisco",
+        "platforms": [
+
+        ],
+        "name": "Umbrella DNS", 
+        "sourcetype": ""
+    }, 
+    {
+        "datasources": [
+            "Web application firewall logs"
+        ],
+        "vendor": "Cisco",
+        "platforms": [
+
+        ],
+        "name": "Cisco WSA", 
+        "sourcetype": "^cisco:wsa$"
+    },
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Cisco", 
+        "name": "Cisco ACS", 
+        "sourcetype": "^(acs|cisco:acs)$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Cisco",
+        "platforms": [
+
+        ],
+        "name": "Sourcefire IDS", 
+        "sourcetype": "^cisco:sourcefire.*$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Fortinet", 
+        "platforms": [
+
+        ],
+        "name": "Fortinet Firewall", 
+        "sourcetype": "^fortinet$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Infoblox", 
+        "platforms": [
+
+        ],
+        "name": "Infoblox DHCP", 
+        "sourcetype": "^infoblox:dhcp$"
+    }, 
+    {
+        "datasources": [
+            "DNS records"
+        ], 
+        "vendor": "Infoblox",
+        "platforms": [
+
+        ],
+        "name": "Infoblox DNS", 
+        "sourcetype": "^infoblox:dns$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Juniper", 
+        "name": "Juniper Firewall", 
+        "sourcetype": "^juniper:junos:firewall$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Juniper", 
+        "platforms": [
+
+        ],
+        "name": "Juniper VPN", 
+        "sourcetype": "^juniper:sslvpn$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Juniper", 
+        "platforms": [
+
+        ],
+        "name": "Juniper netscreen", 
+        "sourcetype": "^netscreen:firewall$"
+    }, 
+    {
+        "datasources": [
+            "Process monitoring"
+        ], 
+        "vendor": "Linux", 
+        "platforms": [
+            "Linux"
+        ],
+        "name": "Linux process tools", 
+        "sourcetype": "^(top|ps)$"
+    }, 
+    {
+        "datasources": [
+            "Authentication logs"
+        ], 
+        "vendor": "Linux", 
+        "platforms": [
+            "Linux"
+        ],
+        "name": "Linux security/auth", 
+        "sourcetype": "^(linux_secure|auditd)$"
+    }, 
+    {
+        "datasources": "", 
+        "vendor": "Linux ", 
+        "name": "Syslog (Generic)", 
+        "sourcetype": "^linux_syslog OR syslog$"
+    }, 
+    {
+        "datasources": [
+            "Anti-virus"
+        ], 
+        "vendor": "McAfee",
+        "platforms": [
+            "Windows"
+        ],
+        "name": "McAfee EPO", 
+        "sourcetype": "^mcafee:epo$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "McAfee",
+        "platforms": [
+            
+        ],
+        "name": "McAfee IDS", 
+        "sourcetype": "^mcafee:ids$"
+    }, 
+    {
+        "datasources": [
+            "Windows event logs",
+            "Authentication logs",
+            "Services",
+            "Windows Registry"
+
+        ], 
+        "vendor": "Microsoft",
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Windows Security Eventlog", 
+        "sourcetype": "^(XML)?WinEventLog:Security$"
+    }, 
+    {
+        "datasources": [
+            "Office 365 audit logs",
+            "Azure activity logs"
+        ], 
+        "vendor": "Microsoft",
+        "platforms": [
+            "Azure"
+        ],
+        "name": "Office 365", 
+        "sourcetype": "^ms:o365:.*$"
+    }, 
+    {
+        "datasources": "", 
+        "vendor": "Microsoft", 
+        "name": "Exchange", 
+        "sourcetype": "^MSExchange.*MessageTracking$"
+    }, 
+    {
+        "datasources": [
+            "Windows event logs",
+            "Process command-line parameters",
+            "DLL monitoring",
+            "File monitoring",
+            "Named Pipes",
+            "PowerShell logs",
+            "Process monitoring",
+            "Process use of network",
+            "System calls",
+            "WMI Objects",
+            "Windows Registry"
+        ], 
+        "vendor": "Microsoft", 
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Sysmon", 
+        "sourcetype": "^.*WinEventLog:Microsoft-Windows-Sysmon.Operational$"
+    }, 
+    {
+        "datasources": [
+            "Asset management"
+        ], 
+        "vendor": "Nessus",
+        "platforms": [
+
+        ],
+        "name": "Nessus Vulnerability Scanner", 
+        "sourcetype": "^(nessus|nessus_xml|nessus:scan)$"
+    }, 
+    {
+        "datasources": [
+            "Netflow/Enclave netflow"
+        ], 
+        "vendor": "Netflow",
+        "platforms": [
+
+        ],
+        "name": "Netflow", 
+        "sourcetype": "^netflow$"
+    }, 
+    {
+        "datasources": [
+            "Process monitoring",
+            "Host network interface",
+            "Binary file metadata",
+            "Process use of network",
+            "Services"
+
+        ], 
+        "vendor": "OSQuery", 
+        "platforms": [
+            "Linux",
+            "macOS",
+            "Windows"
+        ],
+        "name": "OSQuery logs", 
+        "sourcetype": "^osquery_results$"
+    }, 
+    {
+        "datasources": [
+            "Web proxy"
+        ], 
+        "vendor": "Palo Alto Networks", 
+        "name": "Palo Alto proxy", 
+        "sourcetype": "^pan.*threat$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Palo Alto Networks", 
+        "platforms": [
+
+        ],
+        "name": "Palo Alto firewall", 
+        "sourcetype": "^pan.*traffic$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "platforms": [
+
+        ],
+        "vendor": "Palo Alto Networks", 
+        "name": "Firewall w/ AppId", 
+        "sourcetype": "^pan.*traffic$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Palo Alto Networks", 
+        "platforms": [
+
+        ],
+        "name": "Palo Alto IDS", 
+        "sourcetype": "^pan.*threat$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Palo Alto Networks", 
+        "platforms": [
+
+        ],
+        "name": "Palo Alto IPS", 
+        "sourcetype": "^pan.*threat$"
+    },
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "platforms": [
+            
+        ],
+        "vendor": "Snort", 
+        "name": "Snort IDS", 
+        "sourcetype": "^snort$"
+    }, 
+    {
+        "datasources": [
+            "Anti-virus"
+        ],
+        "vendor": "Sophos", 
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "name": "Sophos Anti-Virus", 
+        "sourcetype": "^sophos:.*$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system",
+            "Network protocol analysis"
+        ], 
+        "vendor": "Suricata", 
+        "platforms": [
+
+        ],
+        "name": "Suricata IDS / Network parser ", 
+        "sourcetype": "^suricata$"
+    }, 
+    {
+        "datasources": [
+            "Anti-virus"
+        ], 
+        "vendor": "Symantec", 
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Symantec Endpoint Protection", 
+        "sourcetype": "^symantec:ep.*$"
+    }, 
+    {
+        "datasources": [
+            "Anti-virus"
+        ], 
+        "vendor": "Symantec", 
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Symantec ATP", 
+        "sourcetype": "^symantec:atp:.*$"
+    }, 
+    {
+        "datasources": [
+            "Asset management"
+        ], 
+        "vendor": "Tenable", 
+        "platforms": [
+
+        ],
+        "name": "Tenable Vulnerability Scanner", 
+        "sourcetype": "^tenable:sc:vuln$"
+    }, 
+    {
+        "datasources": [
+            "Network intrusion detection system"
+        ], 
+        "vendor": "Tipping Point", 
+        "platforms": [
+
+        ],
+        "name": "Tippingpoint IPS", 
+        "sourcetype": "^tippingpoint$"
+    }, 
+    {
+        "datasources": [
+            "Web proxy"
+        ], 
+        "vendor": "Websense", 
+        "platforms": [
+
+        ],
+        "name": "Websense Proxy", 
+        "sourcetype": "^websense:cg:kv$"
+    }, 
+    {
+        "datasources": [
+            "Web proxy"
+        ], 
+        "vendor": "Zscaler", 
+        "platforms": [
+
+        ],
+        "name": "ZScaler Web Proxy", 
+        "sourcetype": "^zscalernss-web$"
+    }, 
+    {
+        "datasources": [
+            "Network device logs"
+        ], 
+        "vendor": "Zscaler", 
+        "platforms": [
+
+        ],
+        "name": "Zscaler Firewall", 
+        "sourcetype": "^zscalernss-fw$"
+    }, 
+    {
+        "datasources": [
+            "Web logs"
+        ], 
+        "vendor": "Apache", 
+        "name": "Apache Web Server", 
+        "platforms": [
+
+        ],
+        "sourcetype": "^access_combined$"
+    }, 
+    {
+        "datasources": [
+            "Web logs"
+        ],
+        "vendor": "Microsoft", 
+        "name": "Microsoft IIS", 
+        "platforms": [
+
+        ],
+        "sourcetype": "^(iis|ms:iis.*)$"
+    }, 
+    {
+        "datasources": [
+            "Authentication logs"
+        ], 
+        "vendor": "Azure", 
+        "name": "Azure Active Directory", 
+        "platforms": [
+            "Azure",
+            "Windows"
+        ],
+        "sourcetype": "^ms:aad:signin$"
+    },
+    {
+        "datasources": [
+            "Authentication logs"
+        ], 
+        "vendor": "Okta", 
+        "platforms": [
+
+        ],
+        "name": "OKTA Identity", 
+        "sourcetype": "^OktaIM2.*$"
+    },
+    {
+        "datasources": [
+            "Windows event logs"
+        ], 
+        "vendor": "Microsoft", 
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Windows System Log", 
+        "sourcetype": "^.*WinEventLog:System$"
+    }, 
+    {
+        "datasources": [
+            "Windows event logs"
+        ], 
+        "vendor": "Microsoft", 
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Windows Application Log", 
+        "sourcetype": "^.*WinEventLog:Application$"
+    }, 
+    {
+        "datasources": [
+            "Windows event logs"
+        ], 
+        "vendor": "Microsoft", 
+        "platforms": [
+            "Windows"
+        ],
+        "name": "Windows Update Log", 
+        "sourcetype": "^WindowsUpdateLog$"
+    }, 
+    {
+        "datasources": [
+            "Asset management"
+        ], 
+        "vendor": "Qualys", 
+        "platforms": [
+
+        ],
+        "name": "Qualys Vulnerability Scanner", 
+        "sourcetype": "^qualys:.*$"
+    }, 
+    {
+        "datasources": [
+            "Anti-virus"
+        ],
+        "platforms": [
+
+        ],
+        "vendor": "Crowdstrike", 
+        "name": "Crowdstrike Falcon", 
+        "sourcetype": "^crowdstrike:falcon.*$"
+    }
+]
