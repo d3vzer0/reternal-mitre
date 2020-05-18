@@ -226,18 +226,6 @@
     }, 
     {
         "datasources": [
-            "DNS records",
-            "Network device logs"
-        ], 
-        "vendor": "Cisco",
-        "platforms": [
-
-        ],
-        "name": "Umbrella DNS", 
-        "sourcetype": ""
-    }, 
-    {
-        "datasources": [
             "Web application firewall logs"
         ],
         "vendor": "Cisco",
@@ -350,13 +338,7 @@
         ],
         "name": "Linux security/auth", 
         "sourcetype": "^(linux_secure|auditd)$"
-    }, 
-    {
-        "datasources": "", 
-        "vendor": "Linux ", 
-        "name": "Syslog (Generic)", 
-        "sourcetype": "^linux_syslog OR syslog$"
-    }, 
+    },
     {
         "datasources": [
             "Anti-virus"
@@ -407,7 +389,9 @@
         "sourcetype": "^ms:o365:.*$"
     }, 
     {
-        "datasources": "", 
+        "datasources": [
+            "Email gateway"
+        ], 
         "vendor": "Microsoft", 
         "name": "Exchange", 
         "sourcetype": "^MSExchange.*MessageTracking$"
