@@ -8,7 +8,12 @@
 ---------------------
 
 RE:TERNAL is a centralised purple team simulation platform. Reternal uses agents installed on a simulation network to execute various known
-red-teaming techniques in order to test blue-teaming capabilities. The simulations are mapped to the MITRE ATT&CK framework. This repo contains configuration files that map reternal commands to MITRE techniques. The current techniques are based on the existing META configuration  (https://github.com/uber-common/metta) but reformatted to support reternal's internal command scheduler (+ implemented several structual changes to the format). The script to directly import the mapping files to the reternal backend is available in the Quickstart repository.
+red-teaming techniques in order to test blue-teaming capabilities. The simulations are mapped to the MITRE ATT&CK framework. This repo contains configuration files that map reternal commands to MITRE techniques. The current techniques are based on the existing META configuration  (https://github.com/uber-common/metta) but reformatted to support reternal's internal command scheduler (+ implemented several structual changes to the format). The script to directly import the mapping files to the reternal backend is available in the Quickstart repository. Additionally 
+
+#### Contents
+- /techniques: C2 modules and commands mapped to MITRE ATTCK
+- /validations: Sigma rules (https://github.com/Neo23x0/sigma) to validate rules agains the running campaign 
+- /datasets: Mordor campaigns (https://github.com/hunters-forge/mordor.git) to ingest a pre-built dataset instead of executing a live campaign. 
 
 #### Component installation
 Please visit https://github.com/d3vzer0/reternal-quickstart for a complete overview of all the components and a quickstart tutorial in order to get everything up and running.

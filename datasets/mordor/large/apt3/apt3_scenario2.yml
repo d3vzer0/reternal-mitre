@@ -1,0 +1,7 @@
+name: Caldera Evals APT3 (Empire)
+author: Roberto Rodriguez, Jose Luis Rodriguez
+references:
+    - https://github.com/hunters-forge/mordor/tree/master/datasets/large/windows/apt3
+file: empire_apt3.tar.gz
+mitre_actor:
+  name: APT3

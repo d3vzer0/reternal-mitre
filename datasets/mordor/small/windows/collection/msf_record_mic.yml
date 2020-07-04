@@ -1,0 +1,7 @@
+name: MSF record mic
+author: Roberto Rodriguez
+references:
+    - https://github.com/hunters-forge/mordor
+file: msf_record_mic.zip
+mitre_technique:
+  id: T1123

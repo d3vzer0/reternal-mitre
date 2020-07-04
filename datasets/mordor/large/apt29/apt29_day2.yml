@@ -1,0 +1,7 @@
+name: Caldera Evals APT29 Day 2
+author: Roberto Rodriguez
+references:
+    - https://github.com/hunters-forge/mordor/tree/master/datasets/large/apt29
+file: apt29_evals_day2_manual.zip
+mitre_actor:
+  name: APT29

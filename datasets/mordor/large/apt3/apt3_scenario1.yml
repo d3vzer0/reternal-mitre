@@ -1,0 +1,7 @@
+name: Caldera Evals APT3
+author: Roberto Rodriguez, Jose Luis Rodriguez
+references:
+    - https://github.com/hunters-forge/mordor/tree/master/datasets/large/windows/apt3
+file: caldera_attack_evals_round1_day1_2019-10-20201108.tar.gz
+mitre_actor:
+  name: APT3
